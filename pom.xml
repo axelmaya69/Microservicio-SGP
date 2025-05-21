@@ -19,6 +19,12 @@
   <!--
   SECCION MODULOS
   -->
+  <modules>
+    <module>user</module>
+    <module>product</module>
+    <module>Eureka</module>
+    <module>Gateway</module>
+  </modules>
 
 
   <dependencyManagement>
