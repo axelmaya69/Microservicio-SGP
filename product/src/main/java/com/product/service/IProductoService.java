@@ -1,0 +1,20 @@
+package com.product.service;
+
+import com.product.entity.Producto;
+
+import java.util.List;
+
+public interface IProductoService {
+
+    Producto crearProducto(Producto producto);
+
+    Producto obtenerProducto(int id);
+
+    List<Producto> obtenerProductos();
+
+    Producto actualizarProducto(int id, Producto producto);
+
+    void eliminarProducto(int id);
+
+
+}
