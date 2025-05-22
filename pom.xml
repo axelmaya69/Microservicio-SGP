@@ -24,6 +24,7 @@
     <module>product</module>
     <module>Eureka</module>
     <module>Gateway</module>
+    <module>ConfigServer</module>
   </modules>
 
 
