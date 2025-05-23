@@ -1,13 +1,11 @@
 package com.product.controller;
 
 
+import com.product.entity.Producto;
 import com.product.service.IProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/api/")
 @RestController
@@ -24,6 +22,18 @@ public class ControllerProduct {
     @GetMapping("/get/{id}")
     public ResponseEntity<?> obtenerProducto(@PathVariable int id){
         return ResponseEntity.ok(productoService.obtenerProducto(id));
+    }
+
+    @PostMapping("/post")
+    public ResponseEntity<?> crearProducto(@RequestBody Producto producto){
+        Producto guardarProducto = productoService.crearProducto(producto);
+        return ResponseEntity.ok("Creado exitosamente");
+    }
+
+    @PutMapping("/put/{id}")
+    public ResponseEntity<?> updateProduct(@PathVariable int id, @RequestBody Producto producto){
+    Producto updateProduct = productoService.actualizarProducto(id,producto);
+    return ResponseEntity.ok("Editado con exito");
     }
 
 
