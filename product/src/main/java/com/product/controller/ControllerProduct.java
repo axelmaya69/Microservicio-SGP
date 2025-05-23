@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RequestMapping("/api/")
 @RestController
 public class ControllerProduct {
@@ -16,7 +18,8 @@ public class ControllerProduct {
 
     @GetMapping("/get")
     public ResponseEntity<?> obtenerProductos(){
-        return ResponseEntity.ok(productoService.obtenerProductos());
+        List<Producto> productos = productoService.obtenerProductos();
+        return ResponseEntity.ok(productos);
     }
 
     @GetMapping("/get/{id}")
