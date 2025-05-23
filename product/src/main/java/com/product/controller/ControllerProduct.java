@@ -36,5 +36,11 @@ public class ControllerProduct {
     return ResponseEntity.ok("Editado con exito");
     }
 
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> eliminarProducto(@PathVariable int id){
+        productoService.eliminarProducto(id);
+        return ResponseEntity.ok("Eliminado exitosamente");
+    }
+
 
 }
