@@ -12,6 +12,8 @@ public interface IUserService {
 
     List<User> obtenerUsers();
 
+    List<User> findByProductId(int id);
+
     User actualizarUser(int id, User user);
 
     void eliminarUser (int id);

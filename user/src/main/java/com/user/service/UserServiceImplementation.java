@@ -3,6 +3,7 @@ package com.user.service;
 import com.user.entity.User;
 import com.user.repository.IUser;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -27,6 +28,11 @@ public class UserServiceImplementation implements IUserService{
     @Override
     public List<User> obtenerUsers() {
         return Auser.findAll();
+    }
+
+    @Override
+    public List<User> findByProductId(int id) {
+        return Auser.findAllByProductId(id);
     }
 
     @Override

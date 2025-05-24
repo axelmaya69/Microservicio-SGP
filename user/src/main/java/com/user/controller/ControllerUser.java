@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/")
+@RequestMapping("/api/user")
 public class ControllerUser {
 
     @Autowired
@@ -25,6 +25,12 @@ public class ControllerUser {
     public ResponseEntity<?> obtenerUser(@PathVariable int id){
         User user = userService.obtenerUser(id);
         return ResponseEntity.ok("Obtenido");
+    }
+
+
+    @GetMapping("/search-my-product/{id}")
+    public ResponseEntity<?> findByIdProduct(@PathVariable int id){
+        return ResponseEntity.ok(userService.findByProductId(id));
     }
 
     @PostMapping("/post")

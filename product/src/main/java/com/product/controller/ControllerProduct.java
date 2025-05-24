@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/api/")
+@RequestMapping("/api/product")
 @RestController
 public class ControllerProduct {
 
@@ -25,6 +25,11 @@ public class ControllerProduct {
     @GetMapping("/get/{id}")
     public ResponseEntity<?> obtenerProducto(@PathVariable int id){
         return ResponseEntity.ok(productoService.obtenerProducto(id));
+    }
+
+    @GetMapping("/search-user/{id}")
+    public ResponseEntity<?> findUserByIdProduct(@PathVariable int id){
+        return ResponseEntity.ok(productoService.findUserByIdProduct(id));
     }
 
     @PostMapping("/post")
