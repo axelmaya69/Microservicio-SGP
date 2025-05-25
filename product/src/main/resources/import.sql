@@ -1,0 +1,10 @@
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Camiseta', 'Camiseta de algodón talla M', 199.99);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Pantalón', 'Pantalón jeans azul', 499.50);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES('Zapatos', 'Zapatos deportivos talla 42', 799.00);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Gorra', 'Gorra ajustable color negro', 150.75);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Mochila', 'Mochila para laptop 15 pulgadas', 1200.00);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Reloj', 'Reloj digital resistente al agua', 2500.99);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Camisa', 'Camisa formal manga larga', 350.00);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Chaqueta', 'Chaqueta impermeable para lluvia', 999.99);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Bufanda', 'Bufanda de lana color gris', 299.99);
+INSERT INTO producto ( nombre, descripcion, precio) VALUES( 'Guantes', 'Guantes térmicos para invierno', 199.00);
