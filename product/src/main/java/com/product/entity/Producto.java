@@ -21,12 +21,5 @@ public class Producto {
 
     float precio;
 
-    @ManyToMany
-    @JoinTable(
-            name = "produuct-user",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "user_id")
-    )
-    private List<Producto> productos;
 
 }
