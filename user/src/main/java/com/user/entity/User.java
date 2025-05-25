@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.List;
 
 @Entity
@@ -25,9 +24,8 @@ public class User {
 
     String email;
 
-    @ManyToMany(mappedBy = "users")
-    private List<User> users;
-
+    @Column(name = "product_id")
+    private int productoId;
 
 
 }
