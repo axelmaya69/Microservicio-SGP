@@ -1,0 +1,10 @@
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id) VALUES( 'Carlos', 'Pérez', 'García', 'carlos.perez@email.com',1);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Ana', 'López', 'Martínez', 'ana.lopez@email.com',2);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Luis', 'Gómez', 'Sánchez', 'luis.gomez@email.com',2);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES('María', 'Rodríguez', 'Fernández', 'maria.rodriguez@email.com',3);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Jorge', 'Ramírez', 'Torres', 'jorge.ramirez@email.com',4);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Sofía', 'Morales', 'Vega', 'sofia.morales@email.com',5);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Andrés', 'Flores', 'Castillo', 'andres.flores@email.com',6);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Lucía', 'Hernández', 'Mendoza', 'lucia.hernandez@email.com',1);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Miguel', 'Soto', 'Rivas', 'miguel.soto@email.com',1);
+INSERT INTO user ( nombre, apellidoP, apellidoM, email,product_id)VALUES( 'Elena', 'Navarro', 'Campos', 'elena.navarro@email.com',1);
