@@ -9,6 +9,7 @@ import java.util.List;
 @Repository
 public interface IUser extends JpaRepository<User,Integer> {
 
-    List<User> findAllByProductId(int id);
+    List<User> findAllByProductoId(int id_producto);
+
 
 }
