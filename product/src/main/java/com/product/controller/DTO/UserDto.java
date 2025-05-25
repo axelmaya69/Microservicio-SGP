@@ -11,6 +11,8 @@ import java.util.List;
 @Builder
 public class UserDto {
 
+    private int id;
+
     private String nombre;
 
     private String apellidoP;
@@ -19,5 +21,5 @@ public class UserDto {
 
     private String email;
 
-    private List<User> users;
+
 }
