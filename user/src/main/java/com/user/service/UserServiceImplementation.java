@@ -32,7 +32,7 @@ public class UserServiceImplementation implements IUserService{
 
     @Override
     public List<User> findByProductId(int id) {
-        return Auser.findAllByProductId(id);
+        return Auser.findAllByProductoId(id);
     }
 
     @Override
