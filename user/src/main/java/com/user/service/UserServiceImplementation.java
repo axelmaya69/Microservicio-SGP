@@ -14,7 +14,6 @@ public class UserServiceImplementation implements IUserService{
     @Autowired
     IUser Auser;
 
-
     @Override
     public User crearUser(User user) {
         return Auser.save(user);
