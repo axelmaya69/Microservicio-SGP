@@ -14,7 +14,7 @@ public class UserByProductResponse {
 
     private String descripcion;
 
-    private float precio;
+    private  float precio;
 
     private List<UserDto> userDtoList;
 
