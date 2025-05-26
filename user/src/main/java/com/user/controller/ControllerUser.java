@@ -24,7 +24,7 @@ public class ControllerUser {
     @GetMapping("/get/{id}")
     public ResponseEntity<?> obtenerUser(@PathVariable int id){
         User user = userService.obtenerUser(id);
-        return ResponseEntity.ok("Obtenido");
+        return ResponseEntity.ok(user);
     }
 
 
