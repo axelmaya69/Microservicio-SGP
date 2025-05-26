@@ -27,5 +27,4 @@ public class User {
     @Column(name = "product_id")
     private int productoId;
 
-
 }
