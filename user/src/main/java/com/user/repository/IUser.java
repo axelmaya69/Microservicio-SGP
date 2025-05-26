@@ -11,5 +11,4 @@ public interface IUser extends JpaRepository<User,Integer> {
 
     List<User> findAllByProductoId(int id_producto);
 
-
 }
